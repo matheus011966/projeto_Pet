@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Cadastro</title>
+    <link rel="stylesheet" href="style_cadastro.css">
+</head>
+<body>
+<main>
+    <div class="logo">
+        <a href="#">
+            <img src="assets/logo_nimo_Pet.png" alt="logo_nimo_Pet">
+        </a>
+    </div>
+
+    <h1>Cadastro de Usuario</h1>
+
+    <form action="processa.php" method="POST">
+
+        <label for="Usuario">
+            <span>Nome</span>
+            <input type="text" name="Usuario" id="Usuario" class="Campo" maxlength="30"><br>
+        </label>
+        <label for="Senha">
+            <span>Senha</span>
+            <input  type="password" name="Senha" class="campo" maxlength="10"><br>
+        </label>
+        <label for="Confrimar a senha">
+            <span>Confirmar a senha</span>
+            <input type="password" name="confirme a Senha" class="campo" maxlength="10"><br>
+        </label>
+        <label for="Cargo">
+            <span>Cargo</span>
+            <input type="text" name="Cargo" class="campo" maxlength="30"><br>
+        </label>
+
+        <br> <br>
+        <input type="reset" value="Limpar" class="btn">
+        <input type="submit" value="Salvar" class="btn">
+    </form>
+</main>
+</body>
+</html>
